@@ -1,0 +1,283 @@
+/* Basic Reset */
+html, body, div, span {
+ 	margin: 0;
+ 	padding: 0;
+ 	border: 0;
+ 	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+ }
+
+html, body {
+ background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/retina_wood.png');
+}
+
+.simon {
+  position: relative;
+  width: 472px;
+  height: 472px;
+  margin: 73px auto;
+  background: #333;
+  border-radius: 50%;
+  box-shadow: 0px 0px 12px #222;
+}
+
+.top-half {
+  display: block;
+}
+
+.top-left {
+  float: left;
+  position: relative;
+  display: inline-block;
+  top: 12px;
+  left: 12px;
+  border-left: 12px solid #333;
+  border-top: 12px solid #333;
+  border-top-left-radius: 100%;
+  width: 212px;
+  height: 212px;
+}
+
+.top-right {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-top-right-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  border-bottom-left-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  border-bottom-right-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.center {
+  position: absolute;
+  border-radius: 100%;
+  width: 244px;
+  height: 244px;
+  background: #ECE7EE;
+  left: 113.75px;
+  top: 113.75px;
+  border: 12px solid #333;
+}
+
+.red {
+  background: #9f0f17;
+}
+
+.red-active {
+  background: #ff4c4c;
+}
+
+.green {
+  display: inline-block;
+  background: #00a74a;
+}
+
+
+.green-active {
+  background: #13ff7c;
+}
+
+.blue {
+  background: #094a8f;
+}
+
+
+.blue-active {
+  background: #1c8cff;
+}
+
+.yellow {
+  background: #cca707;
+}
+
+
+.yellow-active {
+  background: #fed93f;
+}
+
+.brand {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 51.2px;
+  color: #222;
+  text-align: center;
+  margin-top: 35px;
+  margin-right: 11px;
+  cursor: default;
+}
+
+.small {
+  position: absolute;
+  float: right;
+  font-size: 15px;
+  margin-top: 18px;
+  margin-right: 10px;
+}
+
+.buttons-top {
+  margin: 0 auto;
+  width: 220px;
+  height: 40px;
+}
+
+.step-display, .start, .strict-container {
+  float: left;
+}
+
+.step-display {
+  margin-left: 27px;
+  width: 58px;
+  height: 40px;
+  background: #32050C;
+  border: 4px solid #222;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.start {
+  width: 28px;
+  height: 28px;
+  margin-left: 16px;
+  margin-top: 7px;
+  background: #FC0102;
+  border-radius: 50%;
+  border: 4px solid #444;
+  box-shadow: 0px 2px 3px #222;
+}
+
+.strict-led {
+  background: #32050C;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #222;
+  margin-left: 35.25px;
+  margin-top: -6px;
+}
+
+.strict-button {
+  background: yellow;
+  width: 28px;
+  height: 28px;
+  margin-left: 26px;
+  margin-top: 3px;
+  border-radius: 50%;
+  border: 4px solid #444;
+  box-shadow: 0px 2px 3px #222;
+}
+
+.count-desc, .start-desc, .strict-desc {
+  float: left;
+  font-family: 'Oswald';
+  font-size: 11.2px;
+  color: #222;
+  margin-top: 5px;
+}
+
+.count-desc {
+  margin-left: 41px;
+}
+
+.start-desc {
+  margin-left: 30px;
+}
+
+.strict-desc {
+  margin-left: 25px;
+}
+
+.on-off-button {
+  font-family: 'Oswald';
+  font-size: 11.2px;
+  color: #222;
+}
+
+.off-desc, .on-off-box, .on-desc {
+  float: left;
+}
+
+.off-desc, .on-desc {
+  margin-top: 13.5px;
+}
+
+.off-desc {
+  margin-left: 72px;
+}
+
+.on-off-box {
+  background: #222;
+  width: 40px;
+  height: 20px;
+  border-radius: 2px;
+  margin-left: 4.5px;
+  margin-top: 11.5px;
+  cursor: pointer;
+}
+
+.on-desc {
+  margin-left: 3.5px
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.led-on {
+  background: #DC0D29;
+}
+
+.step-text {
+  font-family: 'VT323';
+  font-size: 32px;
+  color: #430710;
+  margin-left: 12px;
+}
+
+.display-on {
+  color: #DC0D29;
+}
+
+.on-off-switch {
+  background: #3193DE;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 2px solid #333;
+}
+
+.on {
+  margin-left: 20px;
+}
+
+.start:active {
+  box-shadow: 0 0px 0px #292929;
+  margin-top: 10px;
+}
+
+.strict-button:active {
+  box-shadow: 0 0px 0px #292929;
+  margin-top: 5px;
+}

@@ -1,0 +1,54 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="simon">
+      <div class="top-half clearfix">
+        <div id="1" class="top-left green button"></div><div id="2" class="top-right red button"></div>
+      </div>
+      <div class="bottom-half">
+        <div id="4" class="bottom-left yellow button"></div><div id="3" class="bottom-right blue button"></div>
+      </div>
+      <div class="center">
+        <div class="brand">
+          Simon
+          <span class="small">®</span>
+        </div>
+        <div class="buttons-top clearfix">
+          <div class="step-display"><span class="step-text">--</span></div><div class="start"></div><div class="strict-container"><div class="strict-led"></div><div class="strict-button"></div></div>
+        </div>
+        <div class="buttons-top-desc clearfix">
+          <div class="count-desc">COUNT</div>
+          <div class="start-desc">START</div>
+          <div class="strict-desc">STRICT</div>
+        </div>
+        <div class="on-off-button clearfix">
+          <span class="off-desc">OFF</span><div class="on-off-box clickable"><div class="on-off-switch"></div></div><span class="on-desc">ON</span>
+        </div>
+      </div>
+    </div>
+    <audio id="sound1" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+    <audio id="sound2" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+    <audio id="sound3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+    <audio id="sound4" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+    <script src="simon.js"></script>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('.button').on("click", handleButtonPress);
+      $('.on-off-box').on("click", handleOnOffSwitch);
+      $('.strict-button').on("click", handleStrictSwitch);
+      $('.start').on("click", handleStartButton);
+    });
+  </script>
+</body>
